@@ -1,30 +1,23 @@
 import React from "react";
-import fullImg1 from "/assets/img/project/backend/1.png";
-import fullImg2 from "/assets/img/project/backend/2.png";
-import fullImg3 from "/assets/img/project/backend/3.png";
-
-import frontImg1 from "/assets/img/project/frontend/1.png";
-import frontImg2 from "/assets/img/project/frontend/2.png";
-import frontImg3 from "/assets/img/project/frontend/3.png";
 
 const Projects = () => {
   const fullstack = [
     {
-      img: fullImg1,
+      img: "/assets/img/project/backend/1.png",
       title: "Ballr Table Booking App",
       techstack: " React, redux, Node, Express, mongoDB",
       link: "https://ballr-table-booking.vercel.app/",
       git: "Ballr-Table-Booking-db",
     },
     {
-      img: fullImg2,
+      img: "/assets/img/project/backend/2.png",
       title: "Luxelan",
       techstack: " Php, Bootstrap, Mysql",
       link: "https://luxelan,in/",
       git: "",
     },
     {
-      img: fullImg3,
+      img: "/assets/img/project/backend/3.png",
       title: "Rolls Mania",
       techstack: "Php, Bootstrap, Mysql",
       link: "https://www.rollsmania.com/",
@@ -34,21 +27,21 @@ const Projects = () => {
 
   const frontend = [
     {
-      img: frontImg1,
+      img: "/assets/img/project/frontend/1.png",
       title: "E Commerce",
       techstack: " React, redux, Rest API",
       link: "https://e-commerce-ten-ochre-57.vercel.app/",
       git: "E-Commerce",
     },
     {
-      img: frontImg2,
+      img: "/assets/img/project/frontend/2.png",
       title: "Paste App",
       techstack: " React, redux, Rest API",
       link: "https://vercel.com/ashish-kambles-projects/react-paste-app",
       git: "React-pasteApp",
     },
     {
-      img: frontImg3,
+      img: "/assets/img/project/frontend/3.png",
       title: "Dice Game",
       techstack: "React, redux, Rest API",
       link: "https://dice-game-dusky-nu.vercel.app/",

@@ -1,5 +1,4 @@
 import React from "react";
-import about1 from "/assets/img/hero/2.jpg";
 
 const About = ({ cv }) => {
   return (
@@ -12,7 +11,7 @@ const About = ({ cv }) => {
             </div>
             <div className="col-lg-5">
               <div className="">
-                <img src={about1} className="" alt="" />
+                <img src="assets/img/hero/2.jpg" className="" alt="" />
               </div>
             </div>
             <div className="col-lg-7 pt-3">

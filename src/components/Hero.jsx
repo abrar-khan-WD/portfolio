@@ -1,4 +1,4 @@
-import hero1 from "/assets/img/hero/1.png";
+import React from "react";
 // import cv from "../assets/img/hero/Ashish_kamble_resume_06_2025.pdf";
 const Hero = ({ cv }) => {
   return (
@@ -47,7 +47,7 @@ const Hero = ({ cv }) => {
             <div className="col-lg-6 text-center">
               <div className="">
                 <img
-                  src={hero1}
+                  src="/assets/img/hero/1.png"
                   className="hero-img
               "
                   alt=""

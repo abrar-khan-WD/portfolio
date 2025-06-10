@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "/assets/img/logo/logo.png";
-
 const navItems = [
   { name: "Stats", id: "overview" },
   { name: "About Me", id: "about-me" },
@@ -67,7 +65,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-black sticky-top shadow-sm">
       <div className="container">
         <a className="navbar-brand fw-bold" href="#home">
-          <img src={logo} alt="Logo" className="logo" />
+          <img src="/assets/img/logo/logo.png" alt="Logo" className="logo" />
         </a>
         <button
           className="navbar-toggler"

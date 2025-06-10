@@ -1,20 +1,13 @@
-import gImg1 from "/assets/img/wall/1.jpg";
-import gImg2 from "/assets/img/wall/2.jpg";
-import gImg3 from "/assets/img/wall/3.jpg";
-import gImg4 from "/assets/img/wall/4.jpg";
-import gImg5 from "/assets/img/wall/5.jpg";
-import gImg6 from "/assets/img/wall/6.jpg";
-import gImg7 from "/assets/img/wall/7.jpg";
-
+import React from "react";
 const Wall = ({ logo }) => {
   const gallery = [
-    { img: gImg1 },
-    { img: gImg2 },
-    { img: gImg3 },
-    { img: gImg4 },
-    { img: gImg5 },
-    { img: gImg6 },
-    { img: gImg7 },
+    { img: "/assets/img/wall/1.jpg" },
+    { img: "/assets/img/wall/2.jpg" },
+    { img: "/assets/img/wall/3.jpg" },
+    { img: "/assets/img/wall/4.jpg" },
+    { img: "/assets/img/wall/5.jpg" },
+    { img: "/assets/img/wall/6.jpg" },
+    { img: "/assets/img/wall/7.jpg" },
   ];
 
   return (
@@ -43,3 +36,4 @@ const Wall = ({ logo }) => {
 };
 
 export default Wall;
+// ...existing code...
