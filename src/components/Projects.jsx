@@ -1,5 +1,7 @@
 import React from "react";
 
+const fallbackImg = "/assets/img/logo.png"; // Change this to your fallback image path
+
 const Projects = () => {
   const fullstack = [
     {
@@ -104,15 +106,16 @@ const Projects = () => {
                   aria-labelledby="tab-one-tab"
                 >
                   <div className="row project">
-                    {fullstack.map((f) => {
+                    {fullstack.map((f, idx) => {
                       return (
-                        <div className="col-lg-4 mb-4">
+                        <div className="col-lg-4 mb-4" key={idx}>
                           <div className="card ">
                             <div className="img-box position-relative">
                               <img
-                                src={`${f.img}`}
+                                src={f.img}
                                 className="card-img-top"
-                                alt="..."
+                                alt={f.title}
+                                onError={e => { e.target.onerror = null; e.target.src = fallbackImg; }}
                               />
                               {(f.link || f.git) && (
                                 <div className="text-center links">
@@ -157,15 +160,16 @@ const Projects = () => {
                   aria-labelledby="tab-two-tab"
                 >
                   <div className="row project">
-                    {frontend.map((f) => {
+                    {frontend.map((f, idx) => {
                       return (
-                        <div className="col-lg-4 mb-4">
+                        <div className="col-lg-4 mb-4" key={idx}>
                           <div className="card ">
                             <div className="img-box position-relative">
                               <img
-                                src={`${f.img}`}
+                                src={f.img}
                                 className="card-img-top"
-                                alt="..."
+                                alt={f.title}
+                                onError={e => { e.target.onerror = null; e.target.src = fallbackImg; }}
                               />
                               {(f.link || f.git) && (
                                 <div className="text-center links">
